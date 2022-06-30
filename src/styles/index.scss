@@ -11,7 +11,7 @@ body {
   position: relative;
   font-family: "Montserrat";
   font-weight: 400;
-  background: #fff;
+  background: var(#{--body-background-dark});
 }
 
 .container {

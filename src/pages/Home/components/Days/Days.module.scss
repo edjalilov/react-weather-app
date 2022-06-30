@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 20px;
   width: 100%;
-  background: $light-background;
+  background: var(#{--component-background-default});
   box-shadow: $box-shadow;
   border-radius: $border-radius;
 }
@@ -13,7 +13,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: rgb(71, 147, 255, 0.2);
+  background-color: var(#{--card-background-default});
   border-radius: 10px;
   padding: 10px;
   width: 150px;
@@ -23,6 +23,7 @@
   .day {
     margin-bottom: 7px;
     font-size: 18px;
+    color: var(#{--text-color-default});
   }
   .day_info {
     font-size: 14px;
@@ -38,6 +39,7 @@
   }
   .temp_day {
     font-size: 18px;
+    color: var(#{--text-color-default});
   }
   .temp_night {
     font-size: 13px;
@@ -49,14 +51,14 @@
     color: $base-color;
   }
   &:hover {
-    box-shadow: 0px 3px 20px rgba(147, 144, 144, 0.28);
+    box-shadow: var(--card-shadow-default);
   }
 }
 
 .tabs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7px;
+  margin-bottom: 30px;
 }
 
 .cancel,
@@ -64,9 +66,9 @@
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 5px;
   padding: 10px 20px;
-  background-color: $light-background;
+  background-color: var(#{--component-background-default});
   margin-right: 15px;
-  color: $light-color;
+  color: var(#{--text-color-default});
   font-size: 18px;
   display: flex;
   align-items: center;
