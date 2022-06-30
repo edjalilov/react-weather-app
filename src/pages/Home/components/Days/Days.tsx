@@ -25,7 +25,7 @@ export const Days = (props: Props) => {
     {
       days_of_the_week: "Вторник",
       day_info: "29 авг",
-      icon_id: "sun",
+      icon_id: "mainly_cloudy",
       temp_day: "+18",
       temp_night: "+15",
       info: "Облачно",
@@ -33,7 +33,7 @@ export const Days = (props: Props) => {
     {
       days_of_the_week: "Среда",
       day_info: "30 авг",
-      icon_id: "sun",
+      icon_id: "rain",
       temp_day: "+18",
       temp_night: "+15",
       info: "Облачно",
@@ -41,7 +41,7 @@ export const Days = (props: Props) => {
     {
       days_of_the_week: "Четверг",
       day_info: "31 авг",
-      icon_id: "sun",
+      icon_id: "small_rain",
       temp_day: "+18",
       temp_night: "+15",
       info: "Облачно",
@@ -76,7 +76,7 @@ export const Days = (props: Props) => {
       <Tabs />
       <div className={style.days}>
         {days.map((day: Day) => (
-          <Card day={day} />
+          <Card key={day.days_of_the_week} day={day} />
         ))}
       </div>
     </>
