@@ -9,7 +9,7 @@ interface Props {
 
 export const ThemeProvider = ({ children, ...props }: Props) => {
   const [theme, setTheme] = useState<Theme>(
-    storage.getItem("theme") || Theme.LIGHT
+    storage.getItem("theme") || Theme.DARK
   );
   changeCssRootVariables(theme);
   function changeTheme(theme: Theme) {
