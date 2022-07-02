@@ -1,14 +1,17 @@
+import { Weather } from "../../../../store/types/types";
 import { GlobalSvgSelector } from "../../../../assets/icons/global/GlobalSvgSelector";
 import style from "./CurrentDay.module.scss";
 
-type Props = {};
+interface Props {
+  weather: Weather;
+}
 
-export const CurrentDay = (props: Props) => {
+export const CurrentDay = ({ weather }: Props) => {
   return (
     <div className={style.current_day}>
       <div className={style.top_block}>
         <div className={style.top_block_wrapper}>
-          <div className={style.current_temp}>20°</div>
+          <div className={style.current_temp}>{Math.floor(weather.main.temp)}°</div>
           <div className={style.this_day}>Сегодня</div>
         </div>
         <GlobalSvgSelector id="sun" />

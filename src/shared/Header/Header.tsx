@@ -21,10 +21,15 @@ export const Header = (props: Props) => {
         theme.theme === Theme.DARK ? "#181c25" : "rgba(71, 147, 255, 0.2)",
       width: "200px",
       height: "38px",
+      cursor: "pointer",
       border: "none",
       fontSize: "17px",
       borderRadius: "10px",
       zIndex: 100,
+    }),
+    menu: (styles: any) => ({
+      ...styles,
+      fontSize: "17px",
     }),
     singleValue: (styles: any) => ({
       ...styles,
