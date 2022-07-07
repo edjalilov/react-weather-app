@@ -7,6 +7,5 @@
 - Weather app with a great visual design.
 - Toggle the color scheme between light and dark mode.
 
-Demo. [https://rest-countries-api-edjalilov.vercel.app/](https://rest-countries-api-edjalilov.vercel.app/)
 
 ![preview img](/preview.png)
